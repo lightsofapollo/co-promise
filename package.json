@@ -1,0 +1,30 @@
+{
+  "name": "co-promise",
+  "version": "1.0.0",
+  "description": "co-promise",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --harmony --ui tdd test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lightsofapollo/co-promise.git"
+  },
+  "keywords": [
+    "co",
+    "promise"
+  ],
+  "author": "James Lal [:lightsofapollo]",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lightsofapollo/co-promise/issues"
+  },
+  "homepage": "https://github.com/lightsofapollo/co-promise",
+  "peerDependencies": {
+    "co": "^3.0.6",
+    "promise": "^5.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^1.18.2"
+  }
+}
