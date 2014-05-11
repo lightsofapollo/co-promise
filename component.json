@@ -1,0 +1,17 @@
+{
+  "name": "co-promise",
+  "repository": "lightsofapollo/co-promise",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ],
+  "version": "1.0.0",
+  "dependencies": {
+    "visionmedia/co": "*"
+  },
+  "development": {
+    "scripts": [
+      "index_test.js"
+    ]
+  }
+}

@@ -25,6 +25,8 @@
     "promise": "^5.0.0"
   },
   "devDependencies": {
+    "browser-test": "0.0.0-alpha.2",
+    "component": "^0.19.9",
     "mocha": "^1.18.2"
   }
 }

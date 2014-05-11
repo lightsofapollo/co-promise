@@ -1,7 +1,7 @@
 var co = require('co');
-var Promise = require('promise');
+var Promise = this.Promise || require('' + 'promise');
 
-module.exports = function coPromise(continuable) {
+function coPromise(continuable) {
   return new Promise(function(accept, reject) {
     co(continuable)(function(err, value) {
       if (err) return reject(err);
@@ -9,3 +9,5 @@ module.exports = function coPromise(continuable) {
     });
   });
 };
+
+module.exports = coPromise;
