@@ -1,9 +1,9 @@
 var co = require('co');
 var Promise = this.Promise || require('' + 'promise');
 
-function coPromise(continuable) {
+function coPromise(continuable, context) {
   return new Promise(function(accept, reject) {
-    co(continuable)(function(err, value) {
+    co(continuable).call(context || this, function(err, value) {
       if (err) return reject(err);
       accept(value);
     });
